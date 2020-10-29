@@ -55,11 +55,11 @@ class _HomePageState extends State<HomePage> {
         },
         background:Container(
           padding: EdgeInsets.only(left: 10.0),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Text('Deleting',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)
-            
-          ,),
+          child:ListTile(
+
+            title: Text('Deleting',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),),
+            leading: Icon(Icons.delete_forever,color: Colors.white,),
+          ),
           color: Colors.redAccent,
           ) ,
         child: ListTile(
